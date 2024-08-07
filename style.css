@@ -1,0 +1,132 @@
+@font-face {
+  font-family: little;
+  src: url(Oswald-VariableFont_wght.ttf);
+}
+@keyframes animation {
+0%{
+color: pink;
+}
+25%{
+color: rgb(235, 203, 21);
+}
+
+50%{
+ color: rgb(249, 0, 42);
+}
+75%{
+ color: rgb(167, 16, 161);
+}
+100%{
+  color: rgba(30, 8, 227, 0.543);
+}
+}
+body {
+  background-image: url(https://image.slidesdocs.com/responsive-images/background/nature-bright-white-plain-cloud-cartoon-effect-powerpoint-background_24ce34df87__960_540.jpg);
+  
+  background-size: cover;
+}
+
+h1 {
+
+  font-family: little;
+  font-size: 80px;
+  color: rgb(252, 100, 138);
+  text-transform: uppercase;
+  text-decoration: underline;
+  
+}
+.vitamin-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .vitamin-card {
+    animation-name: vitamin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    margin: 30px;
+    padding: 10px 20px 10px 20px;
+    width: 200px;
+    background-color: rgba(118, 162, 97, 0.631);
+    border: 1px solid black;
+    box-shadow: +12px +12px 10px rgba(36, 19, 187, 0.527)
+  }
+  
+  .vitamin-card h2 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .vitamin-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  h2  {
+    font-family: Playwrite GB S, cursive;
+    
+  }
+  h2 {
+    color: rosybrown;
+    font-weight: 800px;
+  }
+   .intro { 
+    font-size: 20px;
+    font-family: lite;
+    display: block;
+    color: rgb(136, 32, 32);
+   }
+  ul>p {
+    color: brown;
+    background-color: yellow;
+    display: inline;
+    padding:20px ;
+    margin: 0 50px 0 50px;
+  }
+  .intro {
+    font-family: Playwrite GB S, cursive;
+    display: block;
+    color: rgb(136, 32, 32);
+ 
+  }
+  .vitamin-card:hover{
+    
+    transition: ease-in-out 1s;
+    transform: scaleX(1.1);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  }
+  h1 , h2{
+    cursor: pointer;
+    animation-name: animation;
+    animation-duration: 5s;
+ 
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+  }
+@keyframes vitamin {
+
+
+    0%{
+     background-color: rgba(255, 12, 12, 0.741);
+      }
+      25%{
+      background-color: rgba(182, 21, 235, 0.692);
+      }
+      
+      50%{
+        background-color: rgba(96, 156, 0, 0.716);
+      }
+      75%{
+        background-color: rgba(16, 167, 159, 0.438);
+      }
+      100%{
+        background-color:rgba(227, 8, 8, 0.458)227, 0.543;
+      }
+
+  }
+  * {
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
